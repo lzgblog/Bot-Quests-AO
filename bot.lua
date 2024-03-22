@@ -62,7 +62,7 @@ function decideNextAction()
 		local randomIndex = math.random(#directionMap)
 		ao.send({Target = Game, Action = "PlayerMove", Player = ao.id, Direction = directionMap[randomIndex]})
   end
-  InAction = false -- InAction logic added
+  InAction = true -- InAction logic added
 end
 
 -- Handler to print game announcements and trigger game state updates.
